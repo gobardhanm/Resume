@@ -1,0 +1,263 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Gerry - One Page Two Column Resume
+% LaTeX Template
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Gobardhan}{Meher}{ \urlstyle{same}\href{http://gerrymeher.com}{gerrymeher.com}| \href{https://www.linkedin.com/in/gerrymeher}{linkedIn.com/gm}\\
+\href{mailto:gobardhanms364@gmail.com}{gobardhanmeher364@gmail.com} | +91 8114686674 %| %\href{mailto:dd367@cornell.edu}{dd367@cornell.edu}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Indira Gandhi Institute\\ of Technology, Sarang}
+\descript{BTech in Mechanical Engg}
+\location{Grad. May 2023 | Sarang, ODISHA}
+\location{GPA : 8.3/ 10.0}
+\sectionsep
+
+\subsection{RAVENSHAW JR. COLLEGE,\\\ CUTTACK}
+% \descript{BS in Computer Science}
+\location{May 2017 | CUTTACK, ODISHA}
+% College of Engineering \\
+% Magna Cum Laude\\
+% \location{ Cum. GPA: 3.83 / 4.0 \\
+\location{SCORE : 52.33 / 100.0}
+\sectionsep
+
+% \subsection{La Martiniere for Boys}
+% \location{Grad. May 2011|  Kolkata, India}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+% Facebook:// \href{https://facebook/dd}{\bf dd} \\
+Github:// \href{https://github.com/gerry2206}{\bf gerrym} \\
+LinkedIn://  \href{https://www.linkedin.com/in/gerrymeher}{\bf gobardhanm} \\
+% YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\bf DeedyDash007} \\
+Twitter://  \href{https://twitter.com/me_gerry22}{\bf @gobardhan\_meher} \\
+% Quora://  \href{https://www.quora.com/Debarghya-Das}{\bf Debarghya-Das}
+Codeforces:// \href{https://codeforces.com/profile/GerrySup22}{\bf GerrySup22} \\
+CodeChef:// \href{https://www.codechef.com/users/ditu_22}{\bf chefgerry} \\
+LeetCode:// \href{https://leetcode.com/ditu22/}{\bf LC\_Gerry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+% \subsection{Graduate}
+% Advanced Machine Learning \\
+% Open Source Software Engineering \\
+% Advanced Interactive Graphics \\
+% Compilers + Practicum \\
+% Cloud Computing \\
+% Evolutionary Computation \\
+% Defending Computer Networks \\
+% Machine Learning \\
+% \sectionsep
+
+ \subsection{Undergraduate}
+Data Structure and Algorithm \\
+Design and Analysis of Algorithm \\
+Object Oriented Programming \\
+Operating System \\
+Database Management System \\
+% {\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+Computer Networks \\
+Computer Architechture 
+%%%%%%%%%%%%%%%%%%%%%%%%%%but the web page still looks bland. Why?%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Languages:}
+% \location{Over 5000 lines:}
+ C \textbullet{} C++ 
+\textbullet{} Java \textbullet{} Javascript \\ 
+% \location{Over 1000 lines:}
+CSS \textbullet{} HTML \textbullet{} Assembly \textbullet{} Node \\
+  \location{Libraries/Frameworks:}
+    TailwindCSS \textbullet{} ReactJS \textbullet{} NextJS \\
+   NodeJS \textbullet{} Express \\ 
+  \location{Database:}
+  MongoDB \textbullet{} Firebase \\
+  \location{Competative Programming:}
+\urlstyle{same}\href{https://codeforces.com/profile/GerrySup22}{Codeforces} \textbullet{} \href{https://www.codechef.com/users/ditu_22}{CodeChef} \textbullet{}
+\href{https://leetcode.com/ditu22/}{LeetCode} \\
+
+\location{Familiar:}
+ Python \textbullet{} Git \textbullet{} MySQL
+\textbullet{} Linux \\
+Shell(bash) \textbullet{} React-Nature
+\sectionsep 
+
+\section{Soft Skills:}
+Leadership \textbullet{} Public Speaking \textbullet{} Team Management \\
+\section{Languages:}
+Odia \textbullet{} Hindi \textbullet{} English
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE [Personal Project]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects} 
+
+\runsubsection{A Basic Portfolio Website} \\
+\descript{ A Personal Project}
+\location{Nov 2022 | IGIT, Sarang}
+\vspace{\topsep}
+\begin{tightemize}
+
+\item Designed a Portfolio Website using HTML, CSS, JAVASCRIPT.
+\item Used NextJS for the designing of the website.
+\item Deployed the designed website in Versel.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Assassination Device For Counter Terorism} 
+
+\descript{UG 3rd Year Skill Project \\ IGIT, Sarang }
+\location{Feb 2022- April 2022}
+% \vspace{\topsep}
+\begin{tightemize}
+\item Created an Unmanned Vehicle to encounter securities risks.
+\item Designed the Vehicle with Arduino Circuit and electric Motor.
+\item Secured a good Grade in out Project as our HOD and professor got impressed by our Project.
+\end{tightemize}
+
+\sectionsep
+
+\runsubsection{Design and Development of Drone and It's Various Applications} \\
+\descript{UG Final Year Major Project \\ IGIT, Sarang }
+\location{Sept 2022 – April 2023}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Studied and Designed drone component using 3D designing Software( CATIA ).
+\item Analysed the stresses and did Structural Analysis using Ansys.
+\item Achieved the speed efficiency by 10 Percent by able to Reduce the weight of Drone by 100 grams.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH [Experiences]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{EXPERIENCE}
+\runsubsection{DELHIVERY COURIER }
+\descript{| Management}
+\location{June 2021 – Aug 2021 | Padampur, ODISHA}
+Worked in Delhivery Courier Office where I used to manage the allotment of delivery for Our Delivery Agents and I with some other agent used to manage the arrival and departure of courier packages. 
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS [Achievements]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{ACHIEVEMENT} 
+\begin{tabular}{rll}
+
+2022     & Solved fore than 500 Problems in Various Coding Platforms. \\
+2018     & Qualified for Odisha Agricultural University with a Score of 77 Percentile. \\
+2014     & Nation Means-cum-Merit Scholarship Qualifier. \\
+2013     & Awarded as The Best Student Award. \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%      SOFT SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{HOBBIES}
+CODING \\
+SPORTS \\
+COOKING
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS [Summary]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{SUMMARY} 
+
+Passionate, goal-oriented with critical thinking, wants to achieve great heights in my career and grow my network. An avid learner, a great problem solver solves every problem with patience. Want to explore everything in my life/ career.
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
+
